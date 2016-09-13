@@ -2201,19 +2201,43 @@ html {
   position: absolute;
 }
 
-/* line 10, ../src/scss/_forms.scss */
+/* line 12, ../src/scss/_forms.scss */
+::-webkit-input-placeholder {
+  color: #969696;
+  font-weight: bold;
+}
+
+/* line 18, ../src/scss/_forms.scss */
+::-moz-placeholder {
+  color: #969696;
+  font-weight: bold;
+}
+
+/* line 24, ../src/scss/_forms.scss */
+:-ms-input-placeholder {
+  color: #969696 !important;
+  font-weight: bold;
+}
+
+/* line 30, ../src/scss/_forms.scss */
+:-moz-placeholder {
+  color: #969696;
+  font-weight: bold;
+}
+
+/* line 35, ../src/scss/_forms.scss */
 .user_form {
   padding: 0;
   background: transparent;
 }
-/* line 13, ../src/scss/_forms.scss */
+/* line 38, ../src/scss/_forms.scss */
 .user_form .field {
   max-width: 100%;
   display: table;
   width: 100%;
   margin: 0 0 16px 0;
 }
-/* line 21, ../src/scss/_forms.scss */
+/* line 43, ../src/scss/_forms.scss */
 .user_form .field label {
   display: table-cell;
   width: 36px;
@@ -2222,7 +2246,7 @@ html {
   vertical-align: top;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 30, ../src/scss/_forms.scss */
+/* line 51, ../src/scss/_forms.scss */
 .user_form .field input {
   display: table-cell;
   width: 100%;
@@ -2235,7 +2259,7 @@ html {
   padding: 0 12px;
   border-radius: 0;
 }
-/* line 45, ../src/scss/_forms.scss */
+/* line 64, ../src/scss/_forms.scss */
 .user_form .field .wrap {
   position: relative;
   width: auto;
@@ -2243,7 +2267,7 @@ html {
   vertical-align: top;
   background-color: #FFFF;
 }
-/* line 54, ../src/scss/_forms.scss */
+/* line 70, ../src/scss/_forms.scss */
 .user_form .field .wrap .sublabel {
   color: #aaaaaa;
   font-size: 14px;
@@ -2251,87 +2275,87 @@ html {
   margin-top: -15px;
   display: block;
 }
-/* line 62, ../src/scss/_forms.scss */
+/* line 78, ../src/scss/_forms.scss */
 .user_form .field .wrap select {
-  padding: 5px 38px 5px;
+  padding: 5px 5px 5px 38px;
   margin-top: 0;
 }
-/* line 69, ../src/scss/_forms.scss */
+/* line 85, ../src/scss/_forms.scss */
 .user_form textarea {
   display: block;
   width: 100%;
   min-height: 160px;
   margin: 12px 0;
 }
-/* line 76, ../src/scss/_forms.scss */
+/* line 92, ../src/scss/_forms.scss */
 .user_form img.profile_img {
   vertical-align: middle;
   margin: 0 12px 0 0;
 }
-/* line 81, ../src/scss/_forms.scss */
+/* line 97, ../src/scss/_forms.scss */
 .user_form ul.reply {
   padding: 0;
 }
-/* line 85, ../src/scss/_forms.scss */
+/* line 101, ../src/scss/_forms.scss */
 .user_form .error {
   border: 2px solid red;
 }
-/* line 88, ../src/scss/_forms.scss */
+/* line 104, ../src/scss/_forms.scss */
 .user_form .errorlist {
   margin: 0;
   padding: 0 12px;
   border-radius: 0;
 }
-/* line 92, ../src/scss/_forms.scss */
+/* line 108, ../src/scss/_forms.scss */
 .user_form .errorlist li {
   list-style: none;
 }
-/* line 98, ../src/scss/_forms.scss */
+/* line 114, ../src/scss/_forms.scss */
 .user_form .email label, .user_form .username label {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1792' height='1792' viewBox='0 0 1792 1792'%3E%3Cpath d='M1792 826v-794q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v794q44 -49 101 -87q362 -246 497 -345q57 -42 92.5 -65.5t94.5 -48t110 -24.5h1h1q51 0 110 24.5t94.5 48t92.5 65.5q170 123 498 345q57 39 100 87zM1792 1120q0 -79 -49 -151t-122 -123 q-376 -261 -468 -325q-10 -7 -42.5 -30.5t-54 -38t-52 -32.5t-57.5 -27t-50 -9h-1h-1q-23 0 -50 9t-57.5 27t-52 32.5t-54 38t-42.5 30.5q-91 64 -262 182.5t-205 142.5q-62 42 -117 115.5t-55 136.5q0 78 41.5 130t118.5 52h1472q65 0 112.5 -47t47.5 -113z' style='fill:;' transform='scale(1,-1) translate(0,-1536)'/%3E%3C/svg%3E") no-repeat 0 50%;
   background-size: 1em;
   padding-left: 1.1em;
 }
-/* line 105, ../src/scss/_forms.scss */
+/* line 120, ../src/scss/_forms.scss */
 .user_form .password label, .user_form .password1 label, .user_form .password2 label {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1792' height='1792' viewBox='0 0 1792 1792'%3E%3Cpath d='M1664 576q-152 236 -381 353q61 -104 61 -225q0 -185 -131.5 -316.5t-316.5 -131.5t-316.5 131.5t-131.5 316.5q0 121 61 225q-229 -117 -381 -353q133 -205 333.5 -326.5t434.5 -121.5t434.5 121.5t333.5 326.5zM944 960q0 20 -14 34t-34 14q-125 0 -214.5 -89.5 t-89.5 -214.5q0 -20 14 -34t34 -14t34 14t14 34q0 86 61 147t147 61q20 0 34 14t14 34zM1792 576q0 -34 -20 -69q-140 -230 -376.5 -368.5t-499.5 -138.5t-499.5 139t-376.5 368q-20 35 -20 69t20 69q140 229 376.5 368t499.5 139t499.5 -139t376.5 -368q20 -35 20 -69z' style='fill:;' transform='scale(1,-1) translate(0,-1536)'/%3E%3C/svg%3E") no-repeat 0 50%;
   background-size: 1em;
   padding-left: 1.1em;
 }
-/* line 112, ../src/scss/_forms.scss */
+/* line 126, ../src/scss/_forms.scss */
 .user_form .first_name label, .user_form .last_name label {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1408' height='1792' viewBox='0 0 1408 1792'%3E%3Cpath d='M1408 131q0 -120 -73 -189.5t-194 -69.5h-874q-121 0 -194 69.5t-73 189.5q0 53 3.5 103.5t14 109t26.5 108.5t43 97.5t62 81t85.5 53.5t111.5 20q9 0 42 -21.5t74.5 -48t108 -48t133.5 -21.5t133.5 21.5t108 48t74.5 48t42 21.5q61 0 111.5 -20t85.5 -53.5t62 -81 t43 -97.5t26.5 -108.5t14 -109t3.5 -103.5zM1088 1024q0 -159 -112.5 -271.5t-271.5 -112.5t-271.5 112.5t-112.5 271.5t112.5 271.5t271.5 112.5t271.5 -112.5t112.5 -271.5z' style='fill:;' transform='scale(1,-1) translate(0,-1536)'/%3E%3C/svg%3E") no-repeat 0 50%;
   background-size: 1em;
   padding-left: 1.1em;
 }
-/* line 119, ../src/scss/_forms.scss */
+/* line 132, ../src/scss/_forms.scss */
 .user_form .mobile label {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='768' height='1792' viewBox='0 0 768 1792'%3E%3Cpath d='M464 128q0 33 -23.5 56.5t-56.5 23.5t-56.5 -23.5t-23.5 -56.5t23.5 -56.5t56.5 -23.5t56.5 23.5t23.5 56.5zM672 288v704q0 13 -9.5 22.5t-22.5 9.5h-512q-13 0 -22.5 -9.5t-9.5 -22.5v-704q0 -13 9.5 -22.5t22.5 -9.5h512q13 0 22.5 9.5t9.5 22.5zM480 1136 q0 16 -16 16h-160q-16 0 -16 -16t16 -16h160q16 0 16 16zM768 1152v-1024q0 -52 -38 -90t-90 -38h-512q-52 0 -90 38t-38 90v1024q0 52 38 90t90 38h512q52 0 90 -38t38 -90z' style='fill:;' transform='scale(1,-1) translate(0,-1536)'/%3E%3C/svg%3E") no-repeat 0 50%;
   background-size: 1em;
   padding-left: 1.1em;
 }
-/* line 126, ../src/scss/_forms.scss */
+/* line 138, ../src/scss/_forms.scss */
 .user_form .country label {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1536' height='1792' viewBox='0 0 1536 1792'%3E%3Cpath d='M768 1408q209 0 385.5 -103t279.5 -279.5t103 -385.5t-103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103zM1042 887q-2 -1 -9.5 -9.5t-13.5 -9.5q2 0 4.5 5t5 11t3.5 7q6 7 22 15q14 6 52 12q34 8 51 -11 q-2 2 9.5 13t14.5 12q3 2 15 4.5t15 7.5l2 22q-12 -1 -17.5 7t-6.5 21q0 -2 -6 -8q0 7 -4.5 8t-11.5 -1t-9 -1q-10 3 -15 7.5t-8 16.5t-4 15q-2 5 -9.5 10.5t-9.5 10.5q-1 2 -2.5 5.5t-3 6.5t-4 5.5t-5.5 2.5t-7 -5t-7.5 -10t-4.5 -5q-3 2 -6 1.5t-4.5 -1t-4.5 -3t-5 -3.5 q-3 -2 -8.5 -3t-8.5 -2q15 5 -1 11q-10 4 -16 3q9 4 7.5 12t-8.5 14h5q-1 4 -8.5 8.5t-17.5 8.5t-13 6q-8 5 -34 9.5t-33 0.5q-5 -6 -4.5 -10.5t4 -14t3.5 -12.5q1 -6 -5.5 -13t-6.5 -12q0 -7 14 -15.5t10 -21.5q-3 -8 -16 -16t-16 -12q-5 -8 -1.5 -18.5t10.5 -16.5 q2 -2 1.5 -4t-3.5 -4.5t-5.5 -4t-6.5 -3.5l-3 -2q-11 -5 -20.5 6t-13.5 26q-7 25 -16 30q-23 8 -29 -1q-5 13 -41 26q-25 9 -58 4q6 1 0 15q-7 15 -19 12q3 6 4 17.5t1 13.5q3 13 12 23q1 1 7 8.5t9.5 13.5t0.5 6q35 -4 50 11q5 5 11.5 17t10.5 17q9 6 14 5.5t14.5 -5.5 t14.5 -5q14 -1 15.5 11t-7.5 20q12 -1 3 17q-5 7 -8 9q-12 4 -27 -5q-8 -4 2 -8q-1 1 -9.5 -10.5t-16.5 -17.5t-16 5q-1 1 -5.5 13.5t-9.5 13.5q-8 0 -16 -15q3 8 -11 15t-24 8q19 12 -8 27q-7 4 -20.5 5t-19.5 -4q-5 -7 -5.5 -11.5t5 -8t10.5 -5.5t11.5 -4t8.5 -3 q14 -10 8 -14q-2 -1 -8.5 -3.5t-11.5 -4.5t-6 -4q-3 -4 0 -14t-2 -14q-5 5 -9 17.5t-7 16.5q7 -9 -25 -6l-10 1q-4 0 -16 -2t-20.5 -1t-13.5 8q-4 8 0 20q1 4 4 2q-4 3 -11 9.5t-10 8.5q-46 -15 -94 -41q6 -1 12 1q5 2 13 6.5t10 5.5q34 14 42 7l5 5q14 -16 20 -25 q-7 4 -30 1q-20 -6 -22 -12q7 -12 5 -18q-4 3 -11.5 10t-14.5 11t-15 5q-16 0 -22 -1q-146 -80 -235 -222q7 -7 12 -8q4 -1 5 -9t2.5 -11t11.5 3q9 -8 3 -19q1 1 44 -27q19 -17 21 -21q3 -11 -10 -18q-1 2 -9 9t-9 4q-3 -5 0.5 -18.5t10.5 -12.5q-7 0 -9.5 -16t-2.5 -35.5 t-1 -23.5l2 -1q-3 -12 5.5 -34.5t21.5 -19.5q-13 -3 20 -43q6 -8 8 -9q3 -2 12 -7.5t15 -10t10 -10.5q4 -5 10 -22.5t14 -23.5q-2 -6 9.5 -20t10.5 -23q-1 0 -2.5 -1t-2.5 -1q3 -7 15.5 -14t15.5 -13q1 -3 2 -10t3 -11t8 -2q2 20 -24 62q-15 25 -17 29q-3 5 -5.5 15.5 t-4.5 14.5q2 0 6 -1.5t8.5 -3.5t7.5 -4t2 -3q-3 -7 2 -17.5t12 -18.5t17 -19t12 -13q6 -6 14 -19.5t0 -13.5q9 0 20 -10t17 -20q5 -8 8 -26t5 -24q2 -7 8.5 -13.5t12.5 -9.5l16 -8t13 -7q5 -2 18.5 -10.5t21.5 -11.5q10 -4 16 -4t14.5 2.5t13.5 3.5q15 2 29 -15t21 -21 q36 -19 55 -11q-2 -1 0.5 -7.5t8 -15.5t9 -14.5t5.5 -8.5q5 -6 18 -15t18 -15q6 4 7 9q-3 -8 7 -20t18 -10q14 3 14 32q-31 -15 -49 18q0 1 -2.5 5.5t-4 8.5t-2.5 8.5t0 7.5t5 3q9 0 10 3.5t-2 12.5t-4 13q-1 8 -11 20t-12 15q-5 -9 -16 -8t-16 9q0 -1 -1.5 -5.5t-1.5 -6.5 q-13 0 -15 1q1 3 2.5 17.5t3.5 22.5q1 4 5.5 12t7.5 14.5t4 12.5t-4.5 9.5t-17.5 2.5q-19 -1 -26 -20q-1 -3 -3 -10.5t-5 -11.5t-9 -7q-7 -3 -24 -2t-24 5q-13 8 -22.5 29t-9.5 37q0 10 2.5 26.5t3 25t-5.5 24.5q3 2 9 9.5t10 10.5q2 1 4.5 1.5t4.5 0t4 1.5t3 6q-1 1 -4 3 q-3 3 -4 3q7 -3 28.5 1.5t27.5 -1.5q15 -11 22 2q0 1 -2.5 9.5t-0.5 13.5q5 -27 29 -9q3 -3 15.5 -5t17.5 -5q3 -2 7 -5.5t5.5 -4.5t5 0.5t8.5 6.5q10 -14 12 -24q11 -40 19 -44q7 -3 11 -2t4.5 9.5t0 14t-1.5 12.5l-1 8v18l-1 8q-15 3 -18.5 12t1.5 18.5t15 18.5q1 1 8 3.5 t15.5 6.5t12.5 8q21 19 15 35q7 0 11 9q-1 0 -5 3t-7.5 5t-4.5 2q9 5 2 16q5 3 7.5 11t7.5 10q9 -12 21 -2q7 8 1 16q5 7 20.5 10.5t18.5 9.5q7 -2 8 2t1 12t3 12q4 5 15 9t13 5l17 11q3 4 0 4q18 -2 31 11q10 11 -6 20q3 6 -3 9.5t-15 5.5q3 1 11.5 0.5t10.5 1.5 q15 10 -7 16q-17 5 -43 -12zM879 10q206 36 351 189q-3 3 -12.5 4.5t-12.5 3.5q-18 7 -24 8q1 7 -2.5 13t-8 9t-12.5 8t-11 7q-2 2 -7 6t-7 5.5t-7.5 4.5t-8.5 2t-10 -1l-3 -1q-3 -1 -5.5 -2.5t-5.5 -3t-4 -3t0 -2.5q-21 17 -36 22q-5 1 -11 5.5t-10.5 7t-10 1.5t-11.5 -7 q-5 -5 -6 -15t-2 -13q-7 5 0 17.5t2 18.5q-3 6 -10.5 4.5t-12 -4.5t-11.5 -8.5t-9 -6.5t-8.5 -5.5t-8.5 -7.5q-3 -4 -6 -12t-5 -11q-2 4 -11.5 6.5t-9.5 5.5q2 -10 4 -35t5 -38q7 -31 -12 -48q-27 -25 -29 -40q-4 -22 12 -26q0 -7 -8 -20.5t-7 -21.5q0 -6 2 -16z' style='fill:;' transform='scale(1,-1) translate(0,-1536)'/%3E%3C/svg%3E") no-repeat 0 50%;
   background-size: 1em;
   padding-left: 1.1em;
   left: 0 !important;
 }
-/* line 134, ../src/scss/_forms.scss */
+/* line 145, ../src/scss/_forms.scss */
 .user_form .timezone label {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1536' height='1792' viewBox='0 0 1536 1792'%3E%3Cpath d='M896 992v-448q0 -14 -9 -23t-23 -9h-320q-14 0 -23 9t-9 23v64q0 14 9 23t23 9h224v352q0 14 9 23t23 9h64q14 0 23 -9t9 -23zM1312 640q0 148 -73 273t-198 198t-273 73t-273 -73t-198 -198t-73 -273t73 -273t198 -198t273 -73t273 73t198 198t73 273zM1536 640 q0 -209 -103 -385.5t-279.5 -279.5t-385.5 -103t-385.5 103t-279.5 279.5t-103 385.5t103 385.5t279.5 279.5t385.5 103t385.5 -103t279.5 -279.5t103 -385.5z' style='fill:;' transform='scale(1,-1) translate(0,-1536)'/%3E%3C/svg%3E") no-repeat 0 50%;
   background-size: 1em;
   padding-left: 1.1em;
   left: 0 !important;
 }
-/* line 143, ../src/scss/_forms.scss */
+/* line 153, ../src/scss/_forms.scss */
 .user_form .country label,
 .user_form .timezone label {
   top: 53px !important;
   z-index: 20;
   left: 10px !important;
 }
-/* line 150, ../src/scss/_forms.scss */
+/* line 160, ../src/scss/_forms.scss */
 .user_form input[type=submit], .user_form button {
   border: 2px solid #c27a0b;
   border-top-color: #e5a213;
@@ -2354,17 +2378,17 @@ html {
   background-image: linear-gradient(to bottom, #fac960 0%, #e79317 100%);
 }
 
-/* line 171, ../src/scss/_forms.scss */
+/* line 181, ../src/scss/_forms.scss */
 ul.form-errors {
   display: none;
 }
 
-/* line 176, ../src/scss/_forms.scss */
+/* line 186, ../src/scss/_forms.scss */
 ul.field-errors {
   display: none;
 }
 
-/* line 181, ../src/scss/_forms.scss */
+/* line 191, ../src/scss/_forms.scss */
 .error ul.form-errors, .error ul.field-errors.active {
   display: block;
   margin: 10px 0 !important;
@@ -2372,7 +2396,7 @@ ul.field-errors {
   font-size: 13px !important;
 }
 
-/* line 189, ../src/scss/_forms.scss */
+/* line 199, ../src/scss/_forms.scss */
 #yc-dialog {
   display: none;
   z-index: 2100;
@@ -2383,7 +2407,7 @@ ul.field-errors {
   background-color: #ffffff;
   padding: 0 0 30px 0;
 }
-/* line 199, ../src/scss/_forms.scss */
+/* line 209, ../src/scss/_forms.scss */
 #yc-dialog h1, #yc-dialog h3 {
   background-color: #000;
   *zoom: 1;
@@ -2401,20 +2425,20 @@ ul.field-errors {
   overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
-  /* line 199, ../src/scss/_forms.scss */
+  /* line 209, ../src/scss/_forms.scss */
   #yc-dialog h1, #yc-dialog h3 {
     width: 610px;
   }
 }
-/* line 225, ../src/scss/_forms.scss */
+/* line 231, ../src/scss/_forms.scss */
 #yc-dialog h4 {
   padding: 0 0 0 27px;
 }
-/* line 229, ../src/scss/_forms.scss */
+/* line 235, ../src/scss/_forms.scss */
 #yc-dialog > form, #yc-dialog > p {
   padding: 0 27px;
 }
-/* line 233, ../src/scss/_forms.scss */
+/* line 239, ../src/scss/_forms.scss */
 #yc-dialog .terms {
   color: #444;
   background-color: #fefacb;
@@ -2423,14 +2447,14 @@ ul.field-errors {
   font-size: 0.8em;
   line-height: 1.5em;
 }
-/* line 242, ../src/scss/_forms.scss */
+/* line 248, ../src/scss/_forms.scss */
 #yc-dialog .form_errors_nonfield {
   margin: 0 27px 12px;
   padding: 0;
   background-color: transparent;
   border: none;
 }
-/* line 247, ../src/scss/_forms.scss */
+/* line 253, ../src/scss/_forms.scss */
 #yc-dialog .form_errors_nonfield p {
   padding: 0 12px;
   margin: 0;
@@ -2438,23 +2462,23 @@ ul.field-errors {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
-/* line 254, ../src/scss/_forms.scss */
+/* line 260, ../src/scss/_forms.scss */
 #yc-dialog .form_errors_nonfield ul {
   padding: 0;
   margin: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-/* line 262, ../src/scss/_forms.scss */
+/* line 268, ../src/scss/_forms.scss */
 #yc-dialog li {
   display: block;
 }
-/* line 266, ../src/scss/_forms.scss */
+/* line 272, ../src/scss/_forms.scss */
 #yc-dialog #enrol_block {
   background-color: #616c88;
   color: #ffffff;
 }
-/* line 269, ../src/scss/_forms.scss */
+/* line 275, ../src/scss/_forms.scss */
 #yc-dialog #enrol_block a {
   margin: 0 0 24px 27px;
   color: #000000;
@@ -2465,12 +2489,12 @@ ul.field-errors {
   padding: 0 8px;
   border-radius: 12px;
 }
-/* line 281, ../src/scss/_forms.scss */
+/* line 287, ../src/scss/_forms.scss */
 #yc-dialog table.user_details {
   margin: 27px;
   width: auto;
 }
-/* line 285, ../src/scss/_forms.scss */
+/* line 291, ../src/scss/_forms.scss */
 #yc-dialog table.user_details th {
   height: 36px;
   background-color: #343e59;
@@ -2480,83 +2504,83 @@ ul.field-errors {
   padding: 10px 8px 0 36px;
 }
 @media screen and (min-width: 480px) {
-  /* line 285, ../src/scss/_forms.scss */
+  /* line 291, ../src/scss/_forms.scss */
   #yc-dialog table.user_details th {
     min-width: 150px;
   }
 }
-/* line 297, ../src/scss/_forms.scss */
+/* line 303, ../src/scss/_forms.scss */
 #yc-dialog table.user_details th.full_name {
   background: #343e59 url('../images/user_icon.png?658e8dc0bf8b9a09b36994abf9242099') no-repeat 10px 50%;
 }
-/* line 301, ../src/scss/_forms.scss */
+/* line 307, ../src/scss/_forms.scss */
 #yc-dialog table.user_details th.email {
   background: #343e59 url('../images/mail_icon.png?658e8dc0bf8b9a09b36994abf9242099') no-repeat 10px 50%;
 }
-/* line 305, ../src/scss/_forms.scss */
+/* line 311, ../src/scss/_forms.scss */
 #yc-dialog table.user_details th.country {
   background: #343e59 url('../images/country.png?658e8dc0bf8b9a09b36994abf9242099') no-repeat 10px 50%;
 }
-/* line 309, ../src/scss/_forms.scss */
+/* line 315, ../src/scss/_forms.scss */
 #yc-dialog table.user_details th.mobile {
   background: #343e59 url('../images/mobile_icon.png?658e8dc0bf8b9a09b36994abf9242099') no-repeat 10px 50%;
 }
-/* line 314, ../src/scss/_forms.scss */
+/* line 320, ../src/scss/_forms.scss */
 #yc-dialog table.user_details td {
   width: 100%;
   color: #333333;
 }
 @media screen and (min-width: 1024px) {
-  /* line 189, ../src/scss/_forms.scss */
+  /* line 199, ../src/scss/_forms.scss */
   #yc-dialog {
     width: 610px;
     margin: 0 auto;
   }
 }
-/* line 325, ../src/scss/_forms.scss */
+/* line 331, ../src/scss/_forms.scss */
 #yc-dialog select {
   margin-left: 0 !important;
 }
 
-/* line 331, ../src/scss/_forms.scss */
+/* line 337, ../src/scss/_forms.scss */
 .dialog-active #yc-dialog {
   display: block;
 }
 
-/* line 337, ../src/scss/_forms.scss */
+/* line 343, ../src/scss/_forms.scss */
 .enrol .course_buy {
   margin: 0 auto;
   background-color: #616c88;
   padding: 12px;
 }
-/* line 342, ../src/scss/_forms.scss */
+/* line 348, ../src/scss/_forms.scss */
 .enrol .buy_block {
   margin: 12px auto;
   max-width: 400px;
   text-align: center;
 }
 
-/* line 350, ../src/scss/_forms.scss */
+/* line 356, ../src/scss/_forms.scss */
 .registered .email {
   color: lime;
 }
 
-/* line 357, ../src/scss/_forms.scss */
+/* line 363, ../src/scss/_forms.scss */
 .activate article h2, .activate article p {
   text-align: center;
 }
-/* line 360, ../src/scss/_forms.scss */
+/* line 366, ../src/scss/_forms.scss */
 .activate article a {
   font-size: 24px;
   color: #ffff00;
 }
 
-/* line 368, ../src/scss/_forms.scss */
+/* line 374, ../src/scss/_forms.scss */
 #PPDGFrame .panel iframe {
   background: #ffffff url("https://www.paypal.com/en_US/i/icon/icon_animated_prog_42wx42h.gif") no-repeat center center;
 }
 
-/* line 372, ../src/scss/_forms.scss */
+/* line 378, ../src/scss/_forms.scss */
 button.stripe-checkout {
   overflow: hidden;
   display: inline-block;
@@ -2570,7 +2594,7 @@ button.stripe-checkout {
   -moz-user-select: none;
   cursor: pointer;
 }
-/* line 384, ../src/scss/_forms.scss */
+/* line 390, ../src/scss/_forms.scss */
 button.stripe-checkout span {
   position: relative;
   padding: 0 12px;
@@ -2588,27 +2612,27 @@ button.stripe-checkout span {
   min-height: 30px;
 }
 
-/* line 404, ../src/scss/_forms.scss */
+/* line 410, ../src/scss/_forms.scss */
 #yc-dialog .course_buy {
   text-align: center;
 }
-/* line 406, ../src/scss/_forms.scss */
+/* line 412, ../src/scss/_forms.scss */
 #yc-dialog .course_buy h4 {
   text-align: center;
   font-size: 24px;
   line-height: 24px;
 }
-/* line 411, ../src/scss/_forms.scss */
+/* line 417, ../src/scss/_forms.scss */
 #yc-dialog .course_buy form {
   margin: 12px;
 }
-/* line 414, ../src/scss/_forms.scss */
+/* line 420, ../src/scss/_forms.scss */
 #yc-dialog .course_buy .coupon-code-link {
   display: block;
   text-align: center;
 }
 
-/* line 421, ../src/scss/_forms.scss */
+/* line 427, ../src/scss/_forms.scss */
 #dialog-close {
   position: absolute;
   right: 12px;
@@ -2624,22 +2648,22 @@ button.stripe-checkout span {
   width: 21px;
   height: 21px;
 }
-/* line 427, ../src/scss/_forms.scss */
+/* line 433, ../src/scss/_forms.scss */
 #dialog-close:hover {
   opacity: 0.5;
 }
 
-/* line 433, ../src/scss/_forms.scss */
+/* line 439, ../src/scss/_forms.scss */
 .course_page form {
   background-color: transparent;
 }
 
-/* line 439, ../src/scss/_forms.scss */
+/* line 445, ../src/scss/_forms.scss */
 #yc-root form {
   background-color: #FFF;
   padding: 10px 15px;
 }
-/* line 442, ../src/scss/_forms.scss */
+/* line 448, ../src/scss/_forms.scss */
 #yc-root form table, #yc-root form tr, #yc-root form th, #yc-root form td, #yc-root form table, #yc-root form ul, #yc-root form p, #yc-root form label {
   background-color: #FFF;
   color: #d4d4d6;
@@ -2647,31 +2671,31 @@ button.stripe-checkout span {
   font-size: 20px;
   line-height: 20px;
 }
-/* line 449, ../src/scss/_forms.scss */
+/* line 455, ../src/scss/_forms.scss */
 #yc-root form select {
   font-size: 20px;
   line-height: 20px;
 }
-/* line 453, ../src/scss/_forms.scss */
+/* line 459, ../src/scss/_forms.scss */
 #yc-root form textarea {
   font-size: 14px;
   line-height: 18px;
   padding: 8px;
 }
-/* line 458, ../src/scss/_forms.scss */
+/* line 464, ../src/scss/_forms.scss */
 #yc-root form ul {
   padding: 0;
   margin: 0;
 }
-/* line 462, ../src/scss/_forms.scss */
+/* line 468, ../src/scss/_forms.scss */
 #yc-root form li {
   list-style: none !important;
 }
-/* line 467, ../src/scss/_forms.scss */
+/* line 473, ../src/scss/_forms.scss */
 #yc-root .attach-input label {
   display: none;
 }
-/* line 471, ../src/scss/_forms.scss */
+/* line 477, ../src/scss/_forms.scss */
 #yc-root label {
   font-weight: bold;
   display: block;
@@ -2684,7 +2708,7 @@ button.stripe-checkout span {
   left: 11px;
   background-color: transparent !important;
 }
-/* line 484, ../src/scss/_forms.scss */
+/* line 490, ../src/scss/_forms.scss */
 #yc-root input[type=text], #yc-root input[type=password], #yc-root input[type=email], #yc-root input[type=number], #yc-root input[type=url] {
   background-color: #FFF;
   color: #22252e;
@@ -2697,13 +2721,13 @@ button.stripe-checkout span {
   padding: 0 0 0 42px;
   margin-top: 0 !important;
 }
-/* line 502, ../src/scss/_forms.scss */
+/* line 503, ../src/scss/_forms.scss */
 #yc-root textarea {
   width: 100%;
   max-width: 800px;
   display: block;
 }
-/* line 508, ../src/scss/_forms.scss */
+/* line 509, ../src/scss/_forms.scss */
 #yc-root input[type=submit], #yc-root #upload_button {
   color: #0f0e0c;
   display: inline-block;
@@ -2714,7 +2738,7 @@ button.stripe-checkout span {
   margin-top: 8px;
   margin-right: 20px;
 }
-/* line 517, ../src/scss/_forms.scss */
+/* line 518, ../src/scss/_forms.scss */
 #yc-root input[type=submit]:not(.new_comment_submit), #yc-root #upload_button:not(.new_comment_submit) {
   height: 50px;
   border-radius: 4px;
@@ -2730,13 +2754,13 @@ button.stripe-checkout span {
   border: 1px solid #e9a921;
   border-top-color: #fbf2b9;
 }
-/* line 528, ../src/scss/_forms.scss */
+/* line 529, ../src/scss/_forms.scss */
 #yc-root select {
   display: block;
   width: 100%;
   max-width: 800px;
 }
-/* line 534, ../src/scss/_forms.scss */
+/* line 535, ../src/scss/_forms.scss */
 #yc-root input[type="radio"] {
   vertical-align: middle;
 }
