@@ -1,0 +1,19 @@
+<header id="site-header" class="mdc-toolbar">
+    <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+            <a class="show-main-menu material-icons mdc-toolbar__icon--menu">
+                menu
+            </a>
+            <a class="mdc-toolbar__title academy-title" href="#!">{{ academy.title }}</a>
+            <span class="mdc-toolbar__title course-title">{{ course.title }}</span>
+            <span class="mdc-toolbar__title module-title">{{ module.title }}</span>
+            <span class="mdc-toolbar__title lesson-title">{{ lesson.title }}</span>
+        </section>
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+            <a class="show-user-menu material-icons mdc-toolbar__icon--menu">
+                more_vert
+            </a>
+            {% user_profile_menu %}
+        </section>
+    </div>
+</header>

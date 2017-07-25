@@ -1,0 +1,10 @@
+@import "ycthemelib/typography/mixins";
+@import "@material/typography/mixins";
+
+// see https://material.io/guidelines/style/typography.html
+// https://github.com/material-components/material-components-web/tree/master/packages/mdc-typography
+
+
+#yc-root {
+  @include mdc-typography-base;
+}

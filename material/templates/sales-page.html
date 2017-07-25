@@ -1,0 +1,21 @@
+{% setTitle "{{ course.title }}" %}
+{% addClasses "course-sales-page" %}
+{% addClasses "has-page-header" onlyIf=theme_config.show_page_header %}
+{% addClasses "has-sidebar" onlyIf=theme_config.show_sidebar %}
+
+{% include "-site-header" onlyIf=theme_config.show_page_header %}
+
+{% theme_html "pre_banner_text" id="prebanner" onlyIf=theme_config.show_pre_banner_text %}
+{% include "-banner" onlyIf=theme_config.show_banner %}
+
+<div class="main-content">
+    <div class="content">
+        <div class="description">{% page_content %}</div>
+        {% rego_button onlyIf=theme_config.registration_button_at_bottom %}
+    </div>
+    <div class="sidebar">
+        {% trainer_profiles onlyIf=theme_config.show_sidebar %}
+    </div>
+</div>
+
+{% include "-site-footer" %}

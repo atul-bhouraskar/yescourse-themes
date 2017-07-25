@@ -1,0 +1,18 @@
+@import "ycthemelib/responsive";
+@import "./constants";
+
+#content-wrap {
+  img {
+    max-width: 100%;
+  }
+  .course-banner, .page-header {
+    display: none;
+    @include respond_to(tablet_landscape) {
+      display: block;
+    }
+  }
+  .content {
+    padding: 16px;
+    max-width: $MAX_CONTENT_WIDTH;
+  }
+}

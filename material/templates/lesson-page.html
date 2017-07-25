@@ -1,0 +1,60 @@
+{% setTitle "{{ lesson.title }} - {{ course.title }}" %}
+{% addClasses "has-sidebar" %}
+{% addClasses "is-modular" onlyIf=course.is_modular %}
+
+{% include "-site-header" %}
+
+<div id="content-wrap">
+    <article>
+        <nav class="lesson-tabs mdc-tab-bar mdc-tab-bar--icons-with-text">
+            <a class="mdc-tab mdc-tab--with-icon-and-text mdc-tab--active" data-ref=".lesson-content">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">chrome_reader_mode</i>
+                <span class="mdc-tab__icon-text">Content</span>
+            </a>
+            <a class="mdc-tab mdc-tab--with-icon-and-text" data-ref=".comments-block">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">forum</i>
+                <span class="mdc-tab__icon-text">Discussion</span>
+            </a>
+            <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+        <div class="course-banner">{% course_banner %}</div>
+        <div class="page-header">
+            <h1>{{ lesson.title }}</h1>
+        </div>
+        <div class="content">
+            <div class="lesson-content tab-content-active">
+                <div class="description">{% page_content %}</div>
+                {% course_social %}
+                {% lesson_media %}
+            </div>
+            <div class="comments-block tab-content-inactive">
+                {% comments %}
+            </div>
+            {% course_social %}
+        </div>
+    </article>
+
+    <aside>
+        {% breadcrumbs %}
+        <h1 class="academy-title">
+            <a href="#!" id="academy_title">
+                <img class="academy-logo" src="{{ academy.logo_url }}">
+                {{ academy.title }}
+            </a>
+        </h1>
+        <h2 class="course-title">
+            <a href="{% course_url %}">
+                {{ course.title }}
+            </a>
+        </h2>
+        <h3 class="module-title">
+            <a href="{% module_url onlyIf=course.is_modular %}">
+                {{ module.title }}
+            </a>
+        </h3>
+        {% module_lessons_menu %}
+        {% modules_menu %}
+    </aside>
+</div>
+
+{% include "-site-footer" %}

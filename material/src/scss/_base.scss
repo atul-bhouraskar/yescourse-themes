@@ -1,0 +1,28 @@
+@import "ycthemelib/responsive";
+
+html, body {
+  height: 100%;
+}
+
+#yc-root {
+  // apply a natural box layout model to all elements
+  // NOTE: this will affect ALL layout, so remember that all widths/heights are
+  // inclusive of border and padding
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  background-image: none;
+
+  .tab-content-inactive {
+    display: none;
+  }
+
+  @include respond_to(tablet_landscape) {
+    .mdc-tab-bar {
+      margin: 0 16px 16px;
+    }
+  }
+}

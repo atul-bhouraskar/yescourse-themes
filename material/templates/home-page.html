@@ -1,0 +1,11 @@
+{% setTitle "{{ academy.title }} - Home Page" %}
+
+{% include "-site-header" %}
+
+<div id="content_wrap">
+    <article>
+        <h2>Courses that I am a Student in</h2>
+        {% course_list %}
+    </article>
+</div>
+{% include "-site-footer" %}

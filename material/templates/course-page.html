@@ -1,0 +1,33 @@
+{% setTitle "{{ course.title }} - Preface" %}
+{% addClasses "has-sidebar" %}
+
+{% include "-site-header" %}
+
+<div id="content-wrap">
+    <article>
+        <nav class="course-banner">{% course_banner %}</nav>
+        <div class="content">
+            <div class="description">{% page_content %}</div>
+            {% course_social %}
+            <h3>Course Structure</h3>
+            <div class="course_tree">{% course_tree %}</div>
+        </div>
+    </article>
+    <aside>
+        {% breadcrumbs %}
+        <h1 class="academy-title">
+            <a href="#!" id="academy_title">
+                <img class="academy-logo" src="{{ academy.logo_url }}">
+                {{ academy.title }}
+            </a>
+        </h1>
+        <h2 class="course-title">
+            <a href="{% course_url %}">
+                {{ course.title }}
+            </a>
+        </h2>
+        {% trainer_profiles %}
+    </aside>
+</div>
+
+{% include "-site-footer" %}

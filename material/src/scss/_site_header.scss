@@ -1,0 +1,66 @@
+@import "ycthemelib/svgicons/icons";
+@import "ycthemelib/responsive";
+@import "@material/toolbar/mdc-toolbar";
+
+$ACADEMY_TITLE_DISPLAY_TYPE: block;
+
+#site-header {
+  .academy-title {
+    color: inherit;
+    text-decoration: none;
+  }
+  nav.user {
+    // FIXME
+    display: none;
+  }
+}
+
+
+// The title in the header depends on the type of page for mobile
+#yc-root.course-page {
+  #site-header {
+    .academy-title, .module-title, .lesson-title {
+      display: none;
+    }
+  }
+}
+
+#yc-root.module-page {
+  #site-header {
+    .academy-title, .course-title, .lesson-title {
+      display: none;
+    }
+  }
+}
+
+#yc-root.lesson-page {
+  #site-header {
+    .academy-title, .course-title, .module-title {
+      display: none;
+    }
+  }
+}
+
+#yc-root.course-sales-page {
+  #site-header {
+    .course-title, .module-title, .lesson-title {
+      display: none;
+    }
+  }
+}
+
+// For desktop always show the academy title in the header for all pages
+#yc-root {
+  &.course-page, &.module-page, &.lesson-page {
+    @include respond_to(tablet_landscape) {
+      #site-header {
+        .academy-title {
+          display: $ACADEMY_TITLE_DISPLAY_TYPE;
+        }
+        .course-title, .module-title, .lesson-title {
+          display: none;
+        }
+      }
+    }
+  }
+}

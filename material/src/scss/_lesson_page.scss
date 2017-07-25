@@ -1,0 +1,15 @@
+@import "ycthemelib/responsive";
+
+
+#yc-root.lesson-page {
+
+  @include respond_to(tablet_landscape) {
+    // Don't show the tabs
+    .lesson-tabs {
+      display: none;
+    }
+    .tab-content-inactive {
+      display: block;
+    }
+  }
+}
