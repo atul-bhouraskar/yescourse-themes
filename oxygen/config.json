@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "short_name": "oxygen",
+    "title": "Oxygen",
+    "author": "YesCourse Pty Ltd",
+    "description": "A fresh theme"
+  },
+  "templates": {
+    "default-page": "default-page.html",
+    "-site-header": "site-header.html",
+    "-site-footer": "site-footer.html"
+  },
+  "extcss" : [
+     "https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap"
+  ],
+  "extjs" : [],
+  "vars": {
+    "header_background_color": {
+      "type": "color",
+      "default": "#000000"
+    },
+    "header_text_color": {
+      "type": "color",
+      "default": "#ffffff"
+    },
+    "banner_background_color": {
+      "type": "color",
+      "default": "#424242"
+    },
+    "banner_text_color": {
+      "type": "color",
+      "default": "#ffffff"
+    },
+    "banner_custom_text_background_color": {
+      "type": "color-alpha",
+      "default": "rgba(0,0,0,0.52)"
+    },
+    "background_color": {
+      "type": "color",
+      "default": "#ffffff"
+    },
+    "text_color": {
+      "type": "color",
+      "default": "#000000"
+    },
+    "link_text_color": {
+      "type": "color",
+      "default": "#247ca0"
+    },
+    "menu_background_color": {
+      "type": "color",
+      "default": "#4c4c54"
+    },
+    "menu_item_background_color": {
+      "type": "color",
+      "default": "#32323a"
+    },
+    "menu_text_color": {
+      "type": "color",
+      "default": "#ffffff"
+    },
+    "menu_selected_background_color": {
+      "type": "color",
+      "default": "#0999d6"
+    },
+    "menu_selected_text_color": {
+      "type": "color",
+      "default": "#000000"
+    },
+    "rego_button_background_color": {
+      "type": "color-alpha",
+      "default": "rgba(0,0,0,0.52)"
+    },
+    "show_page_header": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": true
+    },
+    "show_pre_banner_text": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": false
+    },
+    "show_banner": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": true
+    },
+    "show_sidebar": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": true
+    },
+    "sales_page_sidebar_html": {
+      "type": "html",
+      "levels": ["S"],
+      "default": "<div class=\"yc-embed-block\" data-type=\"trainer_profiles\"></div>"
+    },
+    "registration_button_in_banner": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": true
+    },
+    "registration_button_at_bottom": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": true
+    },
+    "banner_show_visual": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": true
+    },
+    "banner_has_custom_text": {
+      "type": "boolean",
+      "levels": ["S"],
+      "default": false
+    },
+    "banner_text_position": {
+      "type": "choice",
+      "choices": [
+        ["LEFT", "Left"],
+        ["RIGHT", "Right"],
+        ["BOT", "Bottom"]
+      ],
+      "levels": ["S"],
+      "default": "RIGHT"
+    },
+    "banner_background_scaling": {
+      "type": "choice",
+      "choices": [
+        ["NO_SCALE", "No Scaling applied"],
+        ["COVER", "Scale Image to cover Banner"],
+        ["CONTAIN", "Scale Image to fit inside Banner"]
+      ],
+      "levels": ["S"],
+      "default": "COVER"
+    },
+    "pre_banner_text": {
+      "type": "html",
+      "levels": ["S"],
+      "default": ""
+    },
+    "banner_text": {
+      "type": "html",
+      "levels": ["S"],
+      "default": ""
+    },
+    "banner_background_image": {
+      "type": "image",
+      "levels": ["S"],
+      "default": "none"
+    },
+    "show_academy_banner": {
+      "type": "boolean",
+      "pages": ["academy-page"],
+      "default": true
+    },
+    "academy_banner_image": {
+      "type": "image",
+      "pages": ["academy-page"],
+      "default": "none"
+    },
+    "academy_banner_scaling": {
+      "type": "choice",
+      "choices": [
+        ["NO_SCALE", "No Scaling applied"],
+        ["COVER", "Scale Image to cover Banner"],
+        ["CONTAIN", "Scale Image to fit inside Banner"]
+      ],
+      "pages": ["academy-page"],
+      "default": "COVER"
+    },
+    "academy_banner_repeat": {
+      "type": "choice",
+      "choices": [
+        ["NO_REPEAT", "Don't repeat image"],
+        ["REPEAT", "Allow smaller image to repeat"]
+      ],
+      "default": "NO_REPEAT"
+    },
+    "academy_banner_background_color": {
+      "type": "color",
+      "default": "#424242"
+    },
+    "academy_banner_text_color": {
+      "type": "color",
+      "default": "#fff"
+    },
+    "academy_banner_text": {
+      "type": "html",
+      "pages": ["academy-page"],
+      "default": "<h1>{{academy.title}}</h1>"
+    }
+  },
+  "build_ui": {
+    "groups": [
+      {
+        "name": "Header & Footer",
+        "fields": [
+          {
+            "var": "show_page_header",
+            "label": "Show page header"
+          },
+          {
+            "var": "header_background_color",
+            "label": "Header/Footer Background"
+          },
+          {
+            "var": "header_text_color",
+            "label": "Header/Footer Text"
+          }
+        ]
+      },
+      {
+        "name": "Sales Page Banner",
+        "levels": ["S"],
+        "fields": [
+          {
+            "var": "show_pre_banner_text",
+            "label": "Show Pre-Banner Text"
+          },
+          {
+            "var": "pre_banner_text",
+            "label": "Pre Banner Text",
+            "show-if-true": "show_pre_banner_text"
+          },
+          {
+            "var": "show_banner",
+            "label": "Show Banner"
+          },
+          {
+            "field-set": "banner-fields",
+            "show-if-true": "show_banner",
+            "fields": [
+              {
+                "var": "banner_text_position",
+                "label": "Banner Text Position"
+              },
+              {
+                "var": "banner_text_color",
+                "label": "Banner Text Colour"
+              },
+              {
+                "var": "banner_background_image",
+                "label": "Banner Background Image"
+              },
+              {
+                "var": "banner_background_scaling",
+                "label": "Banner Background Scaling"
+              },
+              {
+                "var": "banner_background_color",
+                "label": "Banner Background Colour"
+              },
+              {
+                "var": "banner_show_visual",
+                "label": "Show Image/Video in Banner"
+              },
+              {
+                "var": "banner_has_custom_text",
+                "label": "Show Custom Banner Text"
+              },
+              {
+                "var": "banner_custom_text_background_color",
+                "label": "Banner Custom Text Background",
+                "show-if-true": "banner_has_custom_text"
+              },
+              {
+                "var": "banner_text",
+                "label": "Banner Text",
+                "show-if-true": "banner_has_custom_text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Registration Button",
+        "levels": ["S"],
+        "fields": [
+          {
+            "var": "registration_button_in_banner",
+            "label": "Registration Button in Banner"
+          },
+          {
+            "var": "registration_button_at_bottom",
+            "label": "Registration Button at Bottom of Page"
+          },
+          {
+            "var": "rego_button_background_color",
+            "label": "Button Background"
+          }
+        ]
+      },
+      {
+        "name": "Content Area",
+        "fields": [
+          {
+            "var": "background_color",
+            "label": "Content Background"
+          },
+          {
+            "var": "text_color",
+            "label": "Content Text"
+          },
+          {
+            "var": "link_text_color",
+            "label": "Content Headings & Links"
+          }
+        ]
+      },
+      {
+        "name": "Side-bar / Menu Area",
+        "levels": ["C", "L", "S"],
+        "fields": [
+          {
+            "var": "show_sidebar",
+            "label": "Show Sidebar"
+          },
+          {
+            "var": "sales_page_sidebar_html",
+            "label": "Sidebar Content"
+          },
+          {
+            "var": "menu_background_color",
+            "label": "Background"
+          },
+          {
+            "var": "menu_text_color",
+            "label": "Text"
+          },
+          {
+            "var": "menu_item_background_color",
+            "label": "Item Background"
+          },
+          {
+            "var": "menu_selected_background_color",
+            "label": "Selected Item Background"
+          },
+          {
+            "var": "menu_selected_text_color",
+            "label": "Selected Item Text"
+          }
+        ]
+      },
+      {
+        "name": "Academy Page Banner",
+        "pages": ["academy-page"],
+        "fields": [
+          {
+            "var": "show_academy_banner",
+            "label": "Show Banner"
+          },
+          {
+            "field-set": "banner-config",
+            "show-if-true": "show_academy_banner",
+            "fields": [
+              {
+                "var": "academy_banner_image",
+                "label": "Image"
+              },
+              {
+                "var": "academy_banner_text_color",
+                "label": "Text Color"
+              },
+              {
+                "var": "academy_banner_scaling",
+                "label": "Scaling"
+              },
+              {
+                "var": "academy_banner_repeat",
+                "label": "Image repeat"
+              },
+              {
+                "var": "academy_banner_text",
+                "label": "Banner Text"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "images": [
+  ]
+}
